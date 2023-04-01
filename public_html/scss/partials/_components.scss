@@ -17,13 +17,13 @@
         &:hover{
             background-color: darken($value, 20%);
             border-color: darken($value, 20%);
-             color:colorYIQ(darken($value, 20%));
+            color:colorYIQ(darken($value, 20%));
         }
     }
     .bg-#{$key}{
         background-color: $value;
     }
-    
+
     .text-#{$key}{
         color: $value;
     }
@@ -69,3 +69,13 @@
         border-color: darken($btn-info, 20%);
     }
 }*/
+
+table{
+    border: 1px solid $table-border;
+    width: 100%;
+    border-collapse: collapse;
+    td,th{
+        border: 1px solid $table-border;
+        padding: 5px;
+    }
+}
