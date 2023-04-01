@@ -1,0 +1,27 @@
+ @mixin styleSection($bg, $padding){
+    padding: $padding;
+    background-color: $bg;
+}
+
+@mixin borderRadius($tl, $tr, $br, $bl){
+    
+    @if($rounded){
+        border-radius: $tl $tr $br $bl;
+    }@else{
+        border-radius: 0;
+    }
+}
+
+@function colorYIQ($color){
+    $r:red($color);
+    $g:green($color);
+    $b:blue($color);
+    
+    $yiq: $r*0.299 + $g*0.587 + $b*0.114;
+    
+    @if($yiq > 120){
+        @return $black;
+    }@else{
+        @return $white;
+    }
+}

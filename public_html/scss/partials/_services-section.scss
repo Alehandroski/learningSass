@@ -1,0 +1,7 @@
+//$service-bg:$black;
+
+.service-section{
+    
+    @include styleSection($section-bg, 30px 0);
+    
+}
