@@ -17,6 +17,7 @@ $body-color:$black;
 $body-bg:$gray-light;
 $section-bg: $white;
 $table-border: $black;
+$input-border-color:$dark-gray;
 
 $header-menu-hover-color:$purple;
 
@@ -36,5 +37,5 @@ block,inline,flex,inline-block,none
 );
 
 
-$rounded: false;
+$rounded: true;
 
